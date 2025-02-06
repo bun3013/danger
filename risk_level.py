@@ -97,7 +97,7 @@ for i, video_path in enumerate(video_paths):
         st.write("### ⚠️ 危険度を評価してください")
         st.write("1 = 安全（余程のことがない限り事故は起きない）")
         st.write("5 = 極めて危険（事故につながる可能性が高い）")
-        danger_level = st.slider(f"video_{i}_slider", 1, 5, 3, 1, key=f"slider_{i}")
+        danger_level = st.slider("危険度評価", 1, 5, 3, 1, key=f"slider_{i}")
 
     col3, col4 = st.columns(2)
     with col3:
